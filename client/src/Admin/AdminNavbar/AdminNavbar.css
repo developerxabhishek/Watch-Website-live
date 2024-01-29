@@ -1,0 +1,59 @@
+.admin-nav{
+    display: flex;
+    height: 60px;
+    background-color: rgb(5, 5, 5);
+    width: 100vw;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.admin-list-nav li{
+    display: inline;
+    font-size: 2rem;
+    margin-left: 2rem;
+
+}
+#admin-checkbox{
+    display: none;
+}
+#admin-checkbox:checked ~ .admin-list-nav{
+    /* display: block; */
+    right: 0%;
+}
+.admin-checkbox{
+    font-size: 3.5rem;
+    display: none;
+}
+@media (max-width: 1800px) {
+    .admin-nav{
+
+        overflow: hidden;
+    }
+    .admin-checkbox{
+        font-size: 3.5rem;
+        display: block;
+    }
+    .admin-list-nav{
+        position: absolute;
+        background-color: black;
+        height: 90vh;
+        width: 20%;
+        top:60px;
+        right: -1000%;
+        z-index: 500;
+        transition: all 0.6s ;
+        align-items: center;
+    }
+    .admin-list-nav li{
+        display: block;
+        line-height: 5rem;
+        transition: 2s;
+        border-bottom: 1px solid white ;
+    }
+  }
+  @media (max-width: 800px){
+    .admin-list-nav{
+        width: 55%;
+    }
+  }
