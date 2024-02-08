@@ -10,6 +10,7 @@ import Errorpage from "./Pages/Errorpage/Errorpage";
 import OtpVerification from "../Authentication/OPT/OtpVerification";
 import Wishlist from  "./Pages/Wishlist/Wishlist";
 import ProfilePage from "./Pages/ProfilePage/ProfilePage";
+
 const User = () => {
   return (
     <>
