@@ -1,4 +1,4 @@
-//import Admin from "./Admin/Admin.jsx";
+import Admin from "./Admin/Admin.jsx";
 
 import AdminLayout from "./AdminPAnel/AdminLayout.jsx";
 import User from "./user/User.jsx";
@@ -6,10 +6,9 @@ import User from "./user/User.jsx";
 const App = () => {
   return (
     <>
-    {/* <AdminLayout/> */}
-    <User/>
+      {/* <AdminLayout/> */}
+      <User />
       {/* <Admin/> */}
-
     </>
   );
 };

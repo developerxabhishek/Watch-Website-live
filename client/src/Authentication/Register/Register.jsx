@@ -12,6 +12,8 @@ const Register = () => {
     const value = e.target.value;
     setInput((values) => ({ ...values, [name]: value }));
   };
+
+  
   const saveChange = () => {
     axios
       .post("http://localhost:8000/api/user/create", input)
@@ -21,12 +23,11 @@ const Register = () => {
         myNavigate("/OtpVerification");
       })
       .catch((res) => {
-        let rest = res.data;
-        console.log(res);
-        alert(rest);
+        alert("invalid details")
       });
     // navigate("/login ");
   };
+
 
   return (
     <>

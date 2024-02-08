@@ -11,4 +11,7 @@ router.post("/signin", signin);
 
 router.post("/verify-email", verifyEmail);
 
+router.post("/add-product",)
+
+
 module.exports = router;
